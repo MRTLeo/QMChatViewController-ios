@@ -130,15 +130,16 @@ static dispatch_queue_t _serialQueue = nil;
             else {
                 [messagesArray addObject:message];
             }
-            
+            /*
             QBChatMessage * dividerMessage = [self handleMessage:message forUpdateType:updateType];
             
             if (dividerMessage) {
                 [messagesArray addObject:dividerMessage];
                 [messageIDs addObject:dividerMessage.ID];
             }
-            
+            */
             [messageIDs addObject:message.ID];
+             
         }
         
         dispatch_sync(dispatch_get_main_queue(), ^{

@@ -13,7 +13,7 @@
 - (void)awakeFromNib {
     
     [super awakeFromNib];
-    self.containerView.bgColor = [UIColor whiteColor];
+    self.containerView.bgColor = [UIColor colorWithRed:0.76 green:0.76 blue:0.76 alpha:1.0];
 }
 
 + (QMChatCellLayoutModel)layoutModel {

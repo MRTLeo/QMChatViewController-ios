@@ -9,6 +9,11 @@
 #import "QMChatOutgoingCell.h"
 
 @implementation QMChatOutgoingCell
+- (void)awakeFromNib {
+
+       [super awakeFromNib];
+       self.containerView.bgColor = [UIColor colorWithRed:0.78 green:0.13 blue:0.13 alpha:1.0];
+    }
 
 + (QMChatCellLayoutModel)layoutModel {
     
